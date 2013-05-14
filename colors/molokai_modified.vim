@@ -11,7 +11,7 @@ endif
 set t_Co=256
 let g:colors_name = "molokai_modified"
 
-hi IncSearch guifg=#ff9538 guibg=#46855c guisp=#46855c gui=NONE ctermfg=215 ctermbg=65 cterm=NONE
+hi IncSearch guifg=#d1ceb3 guibg=#872387 guisp=#872387 gui=NONE ctermfg=187 ctermbg=90 cterm=NONE
 hi WildMenu guifg=#66D9EF guibg=#000000 guisp=#000000 gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
 hi SignColumn guifg=#A6E22E guibg=#232526 guisp=#232526 gui=NONE ctermfg=112 ctermbg=235 cterm=NONE
 hi SpecialComment guifg=#465457 guibg=NONE guisp=NONE gui=bold ctermfg=240 ctermbg=NONE cterm=bold
@@ -20,13 +20,13 @@ hi Title guifg=#ef5939 guibg=NONE guisp=NONE gui=NONE ctermfg=209 ctermbg=NONE c
 hi Folded guifg=#465457 guibg=#000000 guisp=#000000 gui=NONE ctermfg=240 ctermbg=NONE cterm=NONE
 hi PreCondit guifg=#A6E22E guibg=NONE guisp=NONE gui=bold ctermfg=112 ctermbg=NONE cterm=bold
 hi Include guifg=#A6E22E guibg=NONE guisp=NONE gui=NONE ctermfg=112 ctermbg=NONE cterm=NONE
-hi Float guifg=#AE81FF guibg=NONE guisp=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
+"hi TabLineSel -- no settings --
 hi StatusLineNC guifg=#808080 guibg=#080808 guisp=#080808 gui=NONE ctermfg=8 ctermbg=232 cterm=NONE
 "hi CTagsMember -- no settings --
 hi NonText guifg=#BCBCBC guibg=#3B3A32 guisp=#3B3A32 gui=NONE ctermfg=250 ctermbg=237 cterm=NONE
 "hi CTagsGlobalConstant -- no settings --
 hi DiffText guifg=NONE guibg=#4C4745 guisp=#4C4745 gui=bold,italic ctermfg=NONE ctermbg=239 cterm=bold
-hi ErrorMsg guifg=#F92672 guibg=#232526 guisp=#232526 gui=bold ctermfg=197 ctermbg=235 cterm=bold
+hi ErrorMsg guifg=#ed177f guibg=#232526 guisp=#232526 gui=bold ctermfg=198 ctermbg=235 cterm=bold
 hi Ignore guifg=#808080 guibg=#272822 guisp=#272822 gui=NONE ctermfg=8 ctermbg=235 cterm=NONE
 hi Debug guifg=#BCA3A3 guibg=NONE guisp=NONE gui=bold ctermfg=138 ctermbg=NONE cterm=bold
 hi PMenuSbar guifg=NONE guibg=#080808 guisp=#080808 gui=NONE ctermfg=NONE ctermbg=232 cterm=NONE
@@ -42,7 +42,7 @@ hi Normal guifg=#F8F8F2 guibg=#272822 guisp=#272822 gui=NONE ctermfg=230 ctermbg
 hi Label guifg=#E6DB74 guibg=NONE guisp=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
 "hi CTagsImport -- no settings --
 hi PMenuSel guifg=NONE guibg=#808080 guisp=#808080 gui=NONE ctermfg=NONE ctermbg=8 cterm=NONE
-hi Search guifg=#ff9f38 guibg=#267087 guisp=#267087 gui=NONE ctermfg=215 ctermbg=24 cterm=NONE
+hi Search guifg=#ffffff guibg=#144fc7 guisp=#144fc7 gui=NONE ctermfg=15 ctermbg=4 cterm=NONE
 "hi CTagsGlobalVariable -- no settings --
 hi Delimiter guifg=#8F8F8F guibg=NONE guisp=NONE gui=NONE ctermfg=245 ctermbg=NONE cterm=NONE
 hi Statement guifg=#F92672 guibg=NONE guisp=NONE gui=bold ctermfg=197 ctermbg=NONE cterm=bold
@@ -50,7 +50,7 @@ hi Statement guifg=#F92672 guibg=NONE guisp=NONE gui=bold ctermfg=197 ctermbg=NO
 "hi EnumerationValue -- no settings --
 hi Comment guifg=#75715E guibg=NONE guisp=NONE gui=NONE ctermfg=101 ctermbg=NONE cterm=NONE
 hi Character guifg=#E6DB74 guibg=NONE guisp=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
-"hi TabLineSel -- no settings --
+hi Float guifg=#AE81FF guibg=NONE guisp=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
 hi Number guifg=#AE81FF guibg=NONE guisp=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
 hi Boolean guifg=#AE81FF guibg=NONE guisp=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
 hi Operator guifg=#F92672 guibg=NONE guisp=NONE gui=NONE ctermfg=197 ctermbg=NONE cterm=NONE
@@ -59,7 +59,7 @@ hi CursorLine guifg=#e2e4e5 guibg=#3E3D32 guisp=#3E3D32 gui=NONE ctermfg=254 cte
 "hi TabLineFill -- no settings --
 hi Question guifg=#66D9EF guibg=NONE guisp=NONE gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
 hi WarningMsg guifg=#FFFFFF guibg=#333333 guisp=#333333 gui=bold ctermfg=15 ctermbg=236 cterm=bold
-hi VisualNOS guifg=#e2e4e5 guibg=#99572c guisp=#99572c gui=NONE ctermfg=254 ctermbg=137 cterm=NONE
+hi VisualNOS guifg=#122129 guibg=#db6f2c guisp=#db6f2c gui=NONE ctermfg=235 ctermbg=166 cterm=NONE
 hi DiffDelete guifg=#960050 guibg=#1E0010 guisp=#1E0010 gui=NONE ctermfg=89 ctermbg=53 cterm=NONE
 hi ModeMsg guifg=#E6DB74 guibg=NONE guisp=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
 hi CursorColumn guifg=#e2e4e5 guibg=#3E3D32 guisp=#3E3D32 gui=NONE ctermfg=254 ctermbg=237 cterm=NONE
@@ -68,7 +68,7 @@ hi Function guifg=#A6E22E guibg=NONE guisp=NONE gui=NONE ctermfg=112 ctermbg=NON
 hi FoldColumn guifg=#465457 guibg=#000000 guisp=#000000 gui=NONE ctermfg=240 ctermbg=NONE cterm=NONE
 hi PreProc guifg=#A6E22E guibg=NONE guisp=NONE gui=NONE ctermfg=112 ctermbg=NONE cterm=NONE
 "hi EnumerationName -- no settings --
-hi Visual guifg=#e2e4e5 guibg=#ad683c guisp=#ad683c gui=NONE ctermfg=254 ctermbg=137 cterm=NONE
+hi Visual guifg=#122129 guibg=#db6f2c guisp=#db6f2c gui=NONE ctermfg=235 ctermbg=166 cterm=NONE
 hi MoreMsg guifg=#E6DB74 guibg=NONE guisp=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
 "hi SpellCap -- no settings --
 hi VertSplit guifg=#808080 guibg=#080808 guisp=#080808 gui=bold ctermfg=8 ctermbg=232 cterm=bold
@@ -78,7 +78,7 @@ hi Type guifg=#66D9EF guibg=NONE guisp=NONE gui=NONE ctermfg=81 ctermbg=NONE cte
 hi DiffChange guifg=#89807D guibg=#4C4745 guisp=#4C4745 gui=NONE ctermfg=245 ctermbg=239 cterm=NONE
 hi Cursor guifg=#000000 guibg=#ffff42 guisp=#ffff42 gui=NONE ctermfg=NONE ctermbg=227 cterm=NONE
 "hi SpellLocal -- no settings --
-hi Error guifg=#c20057 guibg=#1E0010 guisp=#1E0010 gui=NONE ctermfg=1 ctermbg=53 cterm=NONE
+hi Error guifg=#ed177f guibg=#1E0010 guisp=#1E0010 gui=NONE ctermfg=198 ctermbg=53 cterm=NONE
 hi PMenu guifg=#66D9EF guibg=#000000 guisp=#000000 gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
 hi SpecialKey guifg=#66D9EF guibg=NONE guisp=NONE gui=italic ctermfg=81 ctermbg=NONE cterm=NONE
 hi Constant guifg=#AE81FF guibg=NONE guisp=NONE gui=bold ctermfg=141 ctermbg=NONE cterm=bold
