@@ -11,7 +11,7 @@ endif
 set t_Co=256
 let g:colors_name = "molokai_modified"
 
-hi IncSearch guifg=#d1ceb3 guibg=#872387 guisp=#872387 gui=NONE ctermfg=187 ctermbg=90 cterm=NONE
+hi IncSearch guifg=#272822 guibg=#c7b750 guisp=#c7b750 gui=NONE ctermfg=235 ctermbg=185 cterm=NONE
 hi WildMenu guifg=#66D9EF guibg=#000000 guisp=#000000 gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
 hi SignColumn guifg=#A6E22E guibg=#232526 guisp=#232526 gui=NONE ctermfg=112 ctermbg=235 cterm=NONE
 hi SpecialComment guifg=#465457 guibg=NONE guisp=NONE gui=bold ctermfg=240 ctermbg=NONE cterm=bold
@@ -20,7 +20,7 @@ hi Title guifg=#ef5939 guibg=NONE guisp=NONE gui=NONE ctermfg=209 ctermbg=NONE c
 hi Folded guifg=#465457 guibg=#000000 guisp=#000000 gui=NONE ctermfg=240 ctermbg=NONE cterm=NONE
 hi PreCondit guifg=#A6E22E guibg=NONE guisp=NONE gui=bold ctermfg=112 ctermbg=NONE cterm=bold
 hi Include guifg=#A6E22E guibg=NONE guisp=NONE gui=NONE ctermfg=112 ctermbg=NONE cterm=NONE
-"hi TabLineSel -- no settings --
+hi Float guifg=#AE81FF guibg=NONE guisp=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
 hi StatusLineNC guifg=#808080 guibg=#080808 guisp=#080808 gui=NONE ctermfg=8 ctermbg=232 cterm=NONE
 "hi CTagsMember -- no settings --
 hi NonText guifg=#BCBCBC guibg=#3B3A32 guisp=#3B3A32 gui=NONE ctermfg=250 ctermbg=237 cterm=NONE
@@ -42,7 +42,7 @@ hi Normal guifg=#F8F8F2 guibg=#272822 guisp=#272822 gui=NONE ctermfg=230 ctermbg
 hi Label guifg=#E6DB74 guibg=NONE guisp=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
 "hi CTagsImport -- no settings --
 hi PMenuSel guifg=NONE guibg=#808080 guisp=#808080 gui=NONE ctermfg=NONE ctermbg=8 cterm=NONE
-hi Search guifg=#ffffff guibg=#144fc7 guisp=#144fc7 gui=NONE ctermfg=15 ctermbg=4 cterm=NONE
+hi Search guifg=#272822 guibg=#f5d93b guisp=#f5d93b gui=NONE ctermfg=235 ctermbg=221 cterm=NONE
 "hi CTagsGlobalVariable -- no settings --
 hi Delimiter guifg=#8F8F8F guibg=NONE guisp=NONE gui=NONE ctermfg=245 ctermbg=NONE cterm=NONE
 hi Statement guifg=#F92672 guibg=NONE guisp=NONE gui=bold ctermfg=197 ctermbg=NONE cterm=bold
@@ -50,7 +50,7 @@ hi Statement guifg=#F92672 guibg=NONE guisp=NONE gui=bold ctermfg=197 ctermbg=NO
 "hi EnumerationValue -- no settings --
 hi Comment guifg=#75715E guibg=NONE guisp=NONE gui=NONE ctermfg=101 ctermbg=NONE cterm=NONE
 hi Character guifg=#E6DB74 guibg=NONE guisp=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
-hi Float guifg=#AE81FF guibg=NONE guisp=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
+"hi TabLineSel -- no settings --
 hi Number guifg=#AE81FF guibg=NONE guisp=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
 hi Boolean guifg=#AE81FF guibg=NONE guisp=NONE gui=NONE ctermfg=141 ctermbg=NONE cterm=NONE
 hi Operator guifg=#F92672 guibg=NONE guisp=NONE gui=NONE ctermfg=197 ctermbg=NONE cterm=NONE
