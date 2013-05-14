@@ -11,7 +11,7 @@ endif
 set t_Co=256
 let g:colors_name = "molokai_modified"
 
-hi IncSearch guifg=#C4BE89 guibg=#598575 guisp=#000000 gui=NONE ctermfg=186 ctermbg=NONE cterm=NONE
+hi IncSearch guifg=#ff9538 guibg=#46855c guisp=#46855c gui=NONE ctermfg=215 ctermbg=65 cterm=NONE
 hi WildMenu guifg=#66D9EF guibg=#000000 guisp=#000000 gui=NONE ctermfg=81 ctermbg=NONE cterm=NONE
 hi SignColumn guifg=#A6E22E guibg=#232526 guisp=#232526 gui=NONE ctermfg=112 ctermbg=235 cterm=NONE
 hi SpecialComment guifg=#465457 guibg=NONE guisp=NONE gui=bold ctermfg=240 ctermbg=NONE cterm=bold
@@ -42,7 +42,7 @@ hi Normal guifg=#F8F8F2 guibg=#272822 guisp=#272822 gui=NONE ctermfg=230 ctermbg
 hi Label guifg=#E6DB74 guibg=NONE guisp=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
 "hi CTagsImport -- no settings --
 hi PMenuSel guifg=NONE guibg=#808080 guisp=#808080 gui=NONE ctermfg=NONE ctermbg=8 cterm=NONE
-hi Search guifg=#FFFFFF guibg=#588285 guisp=#588285 gui=NONE ctermfg=15 ctermbg=66 cterm=NONE
+hi Search guifg=#ff9f38 guibg=#267087 guisp=#267087 gui=NONE ctermfg=215 ctermbg=24 cterm=NONE
 "hi CTagsGlobalVariable -- no settings --
 hi Delimiter guifg=#8F8F8F guibg=NONE guisp=NONE gui=NONE ctermfg=245 ctermbg=NONE cterm=NONE
 hi Statement guifg=#F92672 guibg=NONE guisp=NONE gui=bold ctermfg=197 ctermbg=NONE cterm=bold
@@ -68,7 +68,7 @@ hi Function guifg=#A6E22E guibg=NONE guisp=NONE gui=NONE ctermfg=112 ctermbg=NON
 hi FoldColumn guifg=#465457 guibg=#000000 guisp=#000000 gui=NONE ctermfg=240 ctermbg=NONE cterm=NONE
 hi PreProc guifg=#A6E22E guibg=NONE guisp=NONE gui=NONE ctermfg=112 ctermbg=NONE cterm=NONE
 "hi EnumerationName -- no settings --
-hi Visual guifg=#e2e4e5 guibg=#99572c guisp=#99572c gui=NONE ctermfg=254 ctermbg=137 cterm=NONE
+hi Visual guifg=#e2e4e5 guibg=#ad683c guisp=#ad683c gui=NONE ctermfg=254 ctermbg=137 cterm=NONE
 hi MoreMsg guifg=#E6DB74 guibg=NONE guisp=NONE gui=NONE ctermfg=185 ctermbg=NONE cterm=NONE
 "hi SpellCap -- no settings --
 hi VertSplit guifg=#808080 guibg=#080808 guisp=#080808 gui=bold ctermfg=8 ctermbg=232 cterm=bold
