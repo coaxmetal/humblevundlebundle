@@ -337,6 +337,16 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
         call <SID>X("diffAdded", s:green, "", "")
         call <SID>X("diffRemoved", s:red, "", "")
 
+        call <SID>X("DiffAdd", s:green, "", "")
+        call <SID>X("DiffDelete", s:red, "", "")
+        call <SID>X("DiffChange", s:purple, "", "")
+
+        " Gitgutter Highlighting
+        call <SID>X("GitGutterAdd", s:green, s:background, "")
+        call <SID>X("GitGutterDelete", s:red, s:background, "")
+        call <SID>X("GitGutterChange", s:yellow, s:background, "")
+        call <SID>X("GitGutterChangeDelete", s:purple, s:background, "")
+
         " Delete Functions
         delf <SID>X
         delf <SID>rgb
