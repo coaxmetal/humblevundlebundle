@@ -18,6 +18,10 @@ let s:blue = "99cccc"
 let s:purple = "cc99cc"
 let s:window = "4d5057"
 
+" added for syntastic
+let s:error = "f25559"
+let s:warning = "ffE666"
+
 set background=dark
 hi clear
 syntax reset
@@ -346,6 +350,13 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
         call <SID>X("GitGutterDelete", s:red, s:background, "")
         call <SID>X("GitGutterChange", s:yellow, s:background, "")
         call <SID>X("GitGutterChangeDelete", s:purple, s:background, "")
+
+        " Syntastic Highlighting
+        call <SID>X("Error", s:error, s:background, "")
+        call <SID>X("SyntasticWarningSign", s:warning, s:background, "")
+
+        " Pymode Highlighting
+        call <SID>X("pythonIndentError", s:error, "", "undercurl")
 
         " Delete Functions
         delf <SID>X
