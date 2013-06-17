@@ -236,6 +236,13 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
                 endif
         endfun
 
+        fun <SID>XS(group, fg, bg, sp, attr)
+            if a:sp != ""
+                exec "hi " . a:group . " guisp=#" . a:sp
+            endif
+            call <SID>X(a:group, a:fg, a:bg, a:attr)
+        endfun
+
         " Vim Highlighting
         call <SID>X("Normal", s:foreground, s:background, "")
         call <SID>X("LineNr", s:selection, "", "")
@@ -345,6 +352,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
         call <SID>X("DiffDelete", s:red, "", "")
         call <SID>X("DiffChange", s:purple, "", "")
 
+        " spell highlighting
+        call <SID>XS("SpellBad", "", "", s:error, "undercurl")
+        call <SID>XS("SpellCap", "", "", s:warning, "undercurl")
+
         " Gitgutter Highlighting
         call <SID>X("GitGutterAdd", s:green, s:background, "")
         call <SID>X("GitGutterDelete", s:red, s:background, "")
@@ -355,11 +366,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
         call <SID>X("Error", s:error, s:background, "")
         call <SID>X("SyntasticWarningSign", s:warning, s:background, "")
 
-        " Pymode Highlighting
-        call <SID>X("pythonIndentError", s:error, "", "undercurl")
-
         " Delete Functions
         delf <SID>X
+        delf <SID>XS
         delf <SID>rgb
         delf <SID>colour
         delf <SID>rgb_colour
