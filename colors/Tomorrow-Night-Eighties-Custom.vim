@@ -345,22 +345,15 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
         call <SID>X("htmlScriptTag", s:red, "", "")
 
         " Diff Highlighting
-        call <SID>X("diffAdded", s:green, "", "")
-        call <SID>X("diffRemoved", s:red, "", "")
-
-        call <SID>X("DiffAdd", s:green, "", "")
-        call <SID>X("DiffDelete", s:red, "", "")
-        call <SID>X("DiffChange", s:purple, "", "")
+        call <SID>X("diffAdded", s:green, s:background, "")
+        call <SID>X("diffRemoved", s:red, s:background, "")
+        call <SID>X("DiffAdd", s:green, s:background, "")
+        call <SID>X("DiffDelete", s:red, s:background, "")
+        call <SID>X("DiffChange", s:purple, s:background, "")
 
         " spell highlighting
         call <SID>XS("SpellBad", "", "", s:error, "undercurl")
         call <SID>XS("SpellCap", "", "", s:warning, "undercurl")
-
-        " Gitgutter Highlighting
-        call <SID>X("GitGutterAdd", s:green, s:background, "")
-        call <SID>X("GitGutterDelete", s:red, s:background, "")
-        call <SID>X("GitGutterChange", s:yellow, s:background, "")
-        call <SID>X("GitGutterChangeDelete", s:purple, s:background, "")
 
         " Syntastic Highlighting
         call <SID>X("Error", s:error, s:background, "")
