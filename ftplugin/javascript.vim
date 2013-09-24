@@ -1,2 +1,2 @@
 let b:javascript_fold=0
-setl fdm=indent
+setl fdm=marker foldmarker={,}
