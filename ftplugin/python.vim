@@ -1,6 +1,5 @@
-setlocal formatoptions-=t
 setlocal nosmartindent
-
+setlocal formatoptions -= t
 
 " folding from vim-scripts/jpythonfold.vim
 " Fold routines for python code, version 3.2
