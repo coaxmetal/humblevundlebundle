@@ -1,5 +1,3 @@
-call JavaScriptFold()
-
 " tern bindings
 noremap <buffer> <leader>g :TernDef<CR>
 noremap <buffer> <leader>n :TernRefs<CR>
