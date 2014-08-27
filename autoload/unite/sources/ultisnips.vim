@@ -36,7 +36,7 @@ function! s:unite_source.gather_candidates(args, context)
   let default_val = {'word': '', 'unite__abbr': '', 'is_dummy': 0, 'source':
         \  'ultisnips', 'unite__is_marked': 0, 'kind': 'command', 'is_matched': 1,
         \    'is_multiline': 0}
-  let snippet_list = UltiSnips_SnippetsInCurrentScope()
+  let snippet_list = UltiSnips#SnippetsInCurrentScope()
   let canditates = []
   for snip in items(snippet_list)
     let curr_val = copy(default_val)
