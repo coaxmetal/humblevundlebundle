@@ -428,6 +428,9 @@ call <sid>hi("SignifySignDelete",  s:gui08, s:gui01, "", s:cterm08, s:cterm01, "
 call <sid>hi("NERDTreeDirSlash",  s:gui0D, "", "", s:cterm0D, "", "")
 call <sid>hi("NERDTreeExecFile",  s:gui05, "", "", s:cterm05, "", "")
 
+hi link NeomakeError SpellBad
+hi link NeomakeWarning SpellCap
+
 " Remove functions
 delf <sid>hi
 delf <sid>gui
