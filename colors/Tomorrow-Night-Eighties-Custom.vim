@@ -360,8 +360,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>XS("SpellBad", "", "", s:error, "undercurl")
     call <SID>XS("SpellCap", "", "", s:warning, "undercurl")
 
-    " Syntastic Highlighting
+    " Syntastic/Neomake Highlighting
     call <SID>X("Error", s:error, s:background, "")
+    call <SID>X("Warning", s:warning, s:background, "")
     call <SID>X("SyntasticWarningSign", s:warning, s:background, "")
 
     " Delete Functions
