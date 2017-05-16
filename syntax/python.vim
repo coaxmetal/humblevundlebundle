@@ -172,7 +172,7 @@ syn keyword pythonImport        import
 syn match pythonRaiseFromStatement      '\<from\>'
 syn match pythonImport          '^\s*\zsfrom\>'
 
-" syn match pythonClass               "\%(\%(class\s\)\s*\)\@<=\h\%(\w\|\.\)*" contained
+syn match pythonClass               "\%(\%(class\s\)\s*\)\@<=\h\%(\w\|\.\)*" contained
 " syn match pythonExtraOperator       "\%([~!^&|/%+-]\|\%(class\s*\)\@<!<<\|<=>\|<=\|\%(<\|\<class\s\+\u\w*\s*\)\@<!<[^<]\@=\|===\|==\|=\~\|>>\|>=\|=\@<!>\|\.\.\.\|\.\.\|::\)"
 " syn match pythonExtraOperator       "\%(=\)"
 " syn match pythonExtraOperator       "\%(\*\|\*\*\)"
@@ -511,7 +511,7 @@ if v:version >= 508 || !exists('did_python_syn_inits')
   HiLink pythonOperator         Operator
   HiLink pythonSelf             Identifier
 
-  " HiLink pythonClass            Type
+  HiLink pythonClass            Type
   " HiLink pythonExtraOperator          Operator
   " HiLink pythonExtraPseudoOperator    Operator
   "
