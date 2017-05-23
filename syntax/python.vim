@@ -451,21 +451,13 @@ if s:Enabled('g:python_highlight_builtin_objs')
   syn keyword pythonNone        None
   syn keyword pythonBoolean     True False
   syn keyword pythonBuiltinObj  Ellipsis NotImplemented
-  syn match pythonBuiltinObj    '\v\.@<!<%(object|bool|int|float|tuple|str|list|dict|set|frozenset|bytearray|bytes)>'
-  " syn match pythonBuiltinObj    '\v\.@<!<%(object)>'
-  " syn match pythonBuiltinObj    '\v\.@<!<%(bool)>'
-  " syn match pythonBuiltinObj    '\v\.@<!<%(int)>'
-  " syn match pythonBuiltinObj    '\v\.@<!<%(float)>'
-  " syn match pythonBuiltinObj    '\v\.@<!<%(tuple)>'
-  " syn match pythonBuiltinObj    '\v\.@<!<%(str)>'
-  " syn match pythonBuiltinObj    '\v\.@<!<%(list)>'
-  " syn match pythonBuiltinObj    '\v\.@<!<%(dict)>'
-  " syn match pythonBuiltinObj    '\v\.@<!<%(set)>'
-  " syn match pythonBuiltinObj    '\v\.@<!<%(frozenset)>'
-  " syn match pythonBuiltinObj    '\v\.@<!<%(bytearray)>'
-  " syn match pythonBuiltinObj    '\v\.@<!<%(bytes)>'
   syn keyword pythonBuiltinObj  __debug__ __doc__ __file__ __name__ __package__
   syn keyword pythonBuiltinObj  __loader__ __spec__ __path__ __cached__
+endif
+
+
+if s:Enabled('g:python_highlight_additional_builtin_objs')
+  syn match pythonBuiltinObj    '\v\.@<!<%(object|bool|int|float|tuple|str|list|dict|set|frozenset|bytearray|bytes)>'
 endif
 
 "
