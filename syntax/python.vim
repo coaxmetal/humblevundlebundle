@@ -464,6 +464,11 @@ endif
 " Builtin functions
 "
 
+if s:Enabled('g:python_highlight_special_builtin_funcs')
+  syn match pythonBuiltinFunc '\v\.@<!<%(classmethod|eval|staticmethod|super|type)>'
+end
+
+
 if s:Enabled('g:python_highlight_builtin_funcs')
   let s:funcs_re = '__import__|abs|all|any|bin|callable|chr|classmethod|compile|complex|delattr|dir|divmod|enumerate|eval|filter|format|getattr|globals|hasattr|hash|help|hex|id|input|isinstance|issubclass|iter|len|locals|map|max|memoryview|min|next|oct|open|ord|pow|property|range|repr|reversed|round|setattr|slice|sorted|staticmethod|sum|super|type|vars|zip'
 
